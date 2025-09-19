@@ -18,7 +18,7 @@
         <% if (output&&output.searchTerm) { %>
             <p class="bg-success">
 
-                right products with <strong>search query: </strong> <%- output.searchTerm %>
+                <td><%- output.products[i].tags %></td>
                 &nbsp; &nbsp;
                 <small><a href="/app/products">
                     <i class="fa fa-remove"></i> Clear
@@ -61,7 +61,7 @@
 
                 <td><%- output.products[i].descriptionesc %> insane</td>
                 <td><%- output.products[i].code %></td>
-                <td><%- output.products[i].tags %></td>
+                right products with <strong>search query: </strong> <%- output.searchTerm %>
                 
                 <td>
                     <a href='/app/modifyproduct?id=<%=output.products[i].id%>'>Edit</a>
