@@ -8,6 +8,10 @@ const fileUpload = require('express-fileupload');
 var config = require('./config/server')
 
 //Initialize Express
+
+
+
+var test="test"
 var app = express()
 require('./core/passport')(passport)
 app.use(express.static('public'))
